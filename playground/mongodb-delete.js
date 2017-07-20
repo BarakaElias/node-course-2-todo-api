@@ -14,6 +14,9 @@ MongoClient.connect('mongodb://127.0.0.1:27017/TodoApp', (err, db) => {
   }
   console.log('Connected to MongoDb server');
 
+  //CONNECTING TO THE MONGO server
+//  MongoClient.connect('takes the url of the mongo server',(callbck function which takes an err or the db));
+
 
   // DELETE MANY
   // db.collection('Todos').deleteMany({text: 'Eat lunch'}).then((result)=>{
@@ -56,4 +59,11 @@ MongoClient.connect('mongodb://127.0.0.1:27017/TodoApp', (err, db) => {
    3:find one and delete
     instead of getting back a result object with an ok and n property. findOneAndDeleteONe
     actually gets the document back
+
+
+
+    they all return promises
+
+    
+    next UPDATING DOCUMENTS
 */
